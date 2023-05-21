@@ -1,0 +1,133 @@
+:root {
+    --electric-blue: #003DFF;
+    --button-blue-bg: #BBCBFF;
+    --button-gray-bg: #DDDDDD;
+    --main-gray-color: #A1A1A1;
+    --main-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.cart__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.cart-item__container {
+    background-color: #FFF;
+    
+}
+
+.cart-item {
+    display: flex;
+    width: 860px;
+    padding: 32px;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.cart-item__image {
+    margin-right: 32px;
+}
+
+
+.cart-item__image img {
+    width: 150px;
+    height: 150px;
+}
+
+.cart-item__description {
+    width: 320px;
+    color: var(--main-gray-color);
+}
+
+.cart-item__info {
+    position: relative;
+    margin-right: 90px;
+
+}
+
+.cart-item__delete {
+    position: absolute;
+    bottom: 0;
+    color: var(--electric-blue);
+    font-weight: bold;
+}
+
+.cart-item__delete:hover {
+    text-decoration: underline;
+    color: #1950FF;
+}
+
+.cart-item__counter {
+    border: 2px solid var(--main-gray-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-item__checkbox {
+    padding: 0 32px;
+    display:flex;
+    align-items: center;
+}
+
+.cart-item__checkbox input {
+    width: 24px;
+    height: 24px;
+}
+
+
+.cart-item__price p {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cart-item__title {
+    margin-bottom: 8px;
+}
+
+.btn-minus, .btn-plus {
+    padding: 4px 8px;
+    color: var(--main-gray-color);
+}
+.btn-minus:hover {
+    color: #000;
+}
+.btn-plus:hover {
+    color: #000;
+}
+
+
+.cart__container aside {
+    padding: 18px;
+    background-color: #FFF;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+    max-height: 217px;
+    width: 280px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cart__container aside div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Кнопка (ссылка) "Перейти к оформлению" */
+.btn-checkout {
+    background-color: var(--electric-blue);
+    color: #FFF;
+    padding: 16px 22px;
+    border-radius: 10px;
+}
+

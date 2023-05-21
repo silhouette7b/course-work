@@ -1,0 +1,70 @@
+:root {
+    --electric-blue: #003DFF;
+    --button-blue-bg: #BBCBFF;
+    --button-gray-bg: #DDDDDD;
+    --main-gray-color: #A1A1A1;
+    --main-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.product-posters__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+
+.product-poster {
+    width: 570px;
+    height: 400px;
+    background-color: #FFF;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+}
+
+.product-poster.large {
+    width: 1170px;
+}
+
+.product-poster__title {
+    font-size: 32px;
+    padding: 60px;
+}
+
+.product-poster__link {
+    color: #FFF;
+    background-color: var(--electric-blue);
+    margin: 40px 60px;
+    padding: 20px 32px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.product-poster.n1 {
+    background-image: url('../images/catalog/smartphones-and-tablets/poster-smartphones.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px auto;
+}
+
+.product-poster.n2 {
+    background-image: url('../images/catalog/smartphones-and-tablets/poster-tablets.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 250px auto;
+}
+
+.product-poster.n3 {
+    background-image: url('../images/catalog/smartphones-and-tablets/poster-accessories.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right 100px;
+    background-size: 400px auto;
+}
+

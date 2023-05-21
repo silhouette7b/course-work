@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/style-personal-account.css" />
+
+    <!-- Предварительная загрузка второго состояния иконок (синего цвета) для плавности перехода -->
+    <link rel="preload" href="../images/personal-account/Settings-blue.svg" as="image" />
+    <link rel="preload" href="../images/personal-account/Notification-blue.svg" as="image" />
+    <link rel="preload" href="../images/personal-account/OrderHistory-blue.svg" as="image" />
+    <link rel="preload" href="../images/personal-account/Favorite-blue.svg" as="image" />
+    <link rel="preload" href="../images/personal-account/LogOut-blue.svg" as="image" />
+
+    <title>Уведомления</title>
+  </head>
+  <body>
+    <header>
+      <!-- Верхнее меню -->
+      <nav>
+        <div class="container">
+          <div class="nav-list-wrapper">
+            <ul class="nav-list">
+              <li>
+                <a href="../index.html"> <span class="wordmark-lumi">Lumi</span><span class="wordmark-store">store</span> </a>
+              </li>
+              <li>
+                <button class="btn-burger">
+                  <img src="../images/nav/BurgerMenu.svg" alt="burger-menu" />
+                  <span>Каталог</span>
+                </button>
+              </li>
+              <li>
+                <input class="search-box" type="search" placeholder="Поиск" />
+              </li>
+              <li>
+                <a href="./favorites.html">
+                  <div class="nav-item-wrapper">
+                    <img src="../images/nav/Favorite.svg" alt="Избранное" />
+                    <span>Избранное</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="../cart.html">
+                  <div class="nav-item-wrapper">
+                    <img src="../images/nav/CartWithBadge.svg" alt="Корзина" />
+                    <span>Корзина</span>
+                  </div>
+                </a>
+              </li>
+              <!-- Вместо кнопки Войти – изображение профиля -->
+              <!-- <li><button class="btn-sign-in">Войти</button></li> -->
+              <li>
+                <a href=""><img class="profile-picture" src="../images/personal-account/profile-picture.jpg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Навигационная цепочка -->
+      <div class="container">
+        <nav class="breadcrumb">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="./settings.html">Личный кабинет</a></li>
+            <li><a href="./notifications.html">Уведомления</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Заголовок страницы -->
+      <div class="container">
+        <h1 class="page-title">Личный кабинет</h1>
+      </div>
+
+      <section>
+        <div class="container">
+          <div class="personal-account__container">
+            <!-- Боковое меню -->
+            <aside>
+              <ul>
+                <li>
+                  <a href="./settings.html">
+                    <div class="menu-item__wrapper n1">
+                      <img src="../images/personal-account/Settings.svg" alt="" />
+                      <span>Настройки</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="./notifications.html">
+                    <div class="menu-item__wrapper n2" style="color: var(--electric-blue)">
+                      <img src="../images/personal-account/Notification.svg" alt="" style="content: url(../images/personal-account/Notification-blue.svg)" />
+                      <span>Уведомления</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="./order-history.html">
+                    <div class="menu-item__wrapper n3">
+                      <img src="../images/personal-account/OrderHistory.svg" alt="" />
+                      <span>Заказы</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="./favorites.html">
+                    <div class="menu-item__wrapper n4">
+                      <img src="../images/personal-account/Favorite.svg" alt="" />
+                      <span>Избранное</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="menu-item__wrapper n5">
+                      <img src="../images/personal-account/LogOut.svg" alt="" />
+                      <span>Выйти</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+
+            <!-- Уведомления -->
+            <div class="notifications__container">
+              <!-- Слайдеры -->
+              <h3>Системные уведомления</h3>
+              <div class="slider__group">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <p class="slider__name">Получать информационные уведомления на электронную почту</p>
+                </label>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="slider__name">Получать информационные уведомления по SMS</span>
+                </label>
+              </div>
+              <h3>Скидки и предложения</h3>
+              <div class="slider__group">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <p class="slider__name">Получать уведомления о скидках и акциях по SMS</p>
+                </label>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="slider__name">Получать письма о скидках, акциях, новинках на электронную почту</span>
+                </label>
+              </div>
+              <h3>Уведомления о событиях</h3>
+              <div class="slider__group">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <p class="slider__name">Получать уведомления о появлении товара в наличии</p>
+                </label>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="slider__name">Получать уведомления об изменении цены товара в списке избранного</span>
+                </label>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="slider__name">Получать уведомления о комментариях к отзыву</span>
+                </label>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="slider__name">Получать уведомления об ответах в техподдержке</span>
+                </label>
+              </div>
+              <input type="submit" value="Сохранить изменения" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+      <div class="container">
+        <!-- Первая часть футера -->
+        <div class="footer-navmenu__container">
+          <div class="footer-navmenu__group">
+            <ul>
+              <li>
+                <a href=""> <span class="wordmark-lumi">Lumi</span><span class="wordmark-store">store</span> </a>
+              </li>
+              <li>
+                Торговая площадка <br />
+                бренда Lumi
+              </li>
+              <li>
+                <a href="https://vk.com/"><img src="../images/footer/VK.svg" alt="VK" /></a>
+                <a href="https://t.me/"><img src="../images/footer/Telegram.svg" alt="Telegram" /></a>
+                <a href="https://youtube.com/"><img src="../images/footer/YouTube.svg" alt="YouTube" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-navmenu__group">
+            <ul>
+              <li><h4>Товары</h4></li>
+              <li><a href="" class="navmenu__subtitle">Каталог</a></li>
+              <li><a href="" class="navmenu__subtitle">Скидки</a></li>
+              <li><a href="" class="navmenu__subtitle">Популярное</a></li>
+              <li><a href="" class="navmenu__subtitle">Новинки</a></li>
+            </ul>
+          </div>
+          <div class="footer-navmenu__group">
+            <ul>
+              <li><h4>Маркетплейс</h4></li>
+              <li><a href="" class="navmenu__subtitle">О нас</a></li>
+              <li><a href="" class="navmenu__subtitle">Контакты</a></li>
+              <li><a href="" class="navmenu__subtitle">Новости и блог</a></li>
+              <li><a href="" class="navmenu__subtitle">Партнеры</a></li>
+            </ul>
+          </div>
+          <div class="footer-navmenu__group">
+            <ul>
+              <li><h4>Информация</h4></li>
+              <li><a href="" class="navmenu__subtitle">Условия использования</a></li>
+              <li><a href="" class="navmenu__subtitle">Политика конфиденциальности</a></li>
+              <li><a href="" class="navmenu__subtitle">Вакансии</a></li>
+              <li><a href="" class="navmenu__subtitle">Помощь</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Вторая часть футера -->
+        <div class="footer-newsletter__container">
+          <input type="email" class="newsletter-box" placeholder="Подпишитесь, чтобы следить за новинками и акциями!" />
+        </div>
+
+        <!-- Третья часть футера -->
+        <div class="footer-bottom__container">
+          <p>&#169; 2023 Lumistore. Все права защищены.</p>
+          <div class="payment-methods-images">
+            <img src="../images/footer/MirLogo.svg" alt="MIR" />
+            <img src="../images/footer/MastercardLogo.svg" alt="Mastercard" />
+            <img src="../images/footer/VisaLogo.svg" alt="VISA" />
+            <img src="../images/footer/SBPLogo.svg" alt="SBP" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

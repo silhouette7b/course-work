@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style-personal-account.css" />
+    <link rel="stylesheet" href="./css/style-checkout.css" />
+
+    <title>Оформление заказа</title>
+  </head>
+  <body>
+    <header>
+      <!-- Верхнее меню -->
+      <nav>
+        <div class="container">
+          <div class="nav-list-wrapper">
+            <ul class="nav-list">
+              <li>
+                <a href="./index.html"> <span class="wordmark-lumi">Lumi</span><span class="wordmark-store">store</span> </a>
+              </li>
+              <li>
+                <button class="btn-burger">
+                  <img src="./images/nav/BurgerMenu.svg" alt="burger-menu" />
+                  <span>Каталог</span>
+                </button>
+              </li>
+              <li>
+                <input class="search-box" type="search" placeholder="Поиск" />
+              </li>
+              <li>
+                <a href="./personal-account/favorites.html">
+                  <div class="nav-item-wrapper">
+                    <img src="./images/nav/Favorite.svg" alt="Избранное" />
+                    <span>Избранное</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./cart.html">
+                  <div class="nav-item-wrapper">
+                    <img src="./images/nav/CartWithBadge.svg" alt="Корзина" />
+                    <span>Корзина</span>
+                  </div>
+                </a>
+              </li>
+              <!-- Вместо кнопки Войти – изображение профиля -->
+              <!-- <li><button class="btn-sign-in">Войти</button></li> -->
+              <li>
+                <a href=""><img class="profile-picture" src="./images/personal-account/profile-picture.jpg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Навигационная цепочка -->
+      <div class="container">
+        <nav class="breadcrumb">
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./cart.html">Корзина</a></li>
+            <li><a href="./checkout.html">Оформление заказа</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Заголовок страницы -->
+      <div class="container">
+        <h1 class="page-title">Оформление заказа</h1>
+      </div>
+
+      <div class="container">
+        <div class="checkout__container">
+          <div class="order-details">
+            <!-- Данные получателя  -->
+            <h2>Данные получателя</h2>
+            <div class="personal-data">
+              <div class="input__wrapper">
+                <label for="name">Имя</label>
+                <input name="name" type="text" />
+              </div>
+              <div class="input__wrapper">
+                <label for="email">E-mail</label>
+                <input name="email" type="email" />
+              </div>
+              <div class="input__wrapper">
+                <label for="phone-number">Номер телефона</label>
+                <input name="phone-number" type="tel" />
+              </div>
+            </div>
+            <p class="links"><a href="">Войти</a> или <a href="">зарегистрироваться</a>, чтобы сохранить историю покупок</p>
+            <!-- Способ получения -->
+            <h2>Способ получения</h2>
+            <div class="obtaining-method">
+              <button class="blue-button">Самовывоз</button>
+              <button class="gray-button">Доставка</button>
+            </div>
+            <!-- Адрес -->
+            <div class="address__wrapper">
+              <div class="address__left-column">
+                <img src="./images/checkout/Location.svg" alt="" />
+              </div>
+              <div class="address__right-column">
+                <p class="address">
+                  Пункт выдачи “Lumistore”<br />
+                  <span>г. Калуга, Грабцевское шоссе, 00</span>
+                </p>
+                <a href="">Показать на карте</a>
+              </div>
+            </div>
+            <div class="payment-method">
+              <h2>Способ оплаты</h2>
+              <button class="blue-button">Онлайн</button>
+              <button class="gray-button">На месте</button>
+              <button class="gray-button">В рассрочку</button>
+            </div>
+          </div>
+          <aside>
+            <div class="order-summary">
+              <div>
+                <h3>Ваш заказ</h3>
+                <span style="color: var(--main-gray-color)">1 товар</span>
+              </div>
+              <div><span>Товаров на сумму:</span><span>17990&nbsp;&#8381;</span></div>
+              <div><span>Скидка:</span><span style="color: var(--electric-blue)">0&nbsp;&#8381;</span></div>
+              <div><span>Доставка:</span><span style="color: var(--electric-blue)">бесплатно</span></div>
+              <div style="font-size: 20px; padding-top: 36px"><span>Итог:</span><span>17990&nbsp;&#8381;</span></div>
+
+              <div><button class="btn-pay">Оплатить</button></div>
+              <div>
+                <span style="font-size: 12px">Нажимая на кнопку, вы соглашаетесь с <a href="" style="color: var(--electric-blue)">условиями использования</a> и <a href="" style="color: var(--electric-blue)">правилами возврата</a></span>
+              </div>
+            </div>
+            <div class="promocode__container">
+              <p>Есть промокод?</p>
+              <input class="promocode" type="text" placeholder="Введите промокод" />
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+      <div class="container">
+        <!-- Первая часть футера -->
+        <div class="footer-navmenu__container">
+          <div class="footer-navmenu__group">
+            <ul>
+              <li>
+                <a href=""> <span class="wordmark-lumi">Lumi</span><span class="wordmark-store">store</span> </a>
+              </li>
+              <li>
+                Торговая площадка <br />
+                бренда Lumi
+              </li>
+              <li>
+                <a href="https://vk.com/"><img src="./images/footer/VK.svg" alt="VK" /></a>
+                <a href="https://t.me/"><img src="./images/footer/Telegram.svg" alt="Telegram" /></a>
+                <a href="https://youtube.com/"><img src="./images/footer/YouTube.svg" alt="YouTube" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-navmenu__group">
+            <ul>
+              <li><h4>Товары</h4></li>
+              <li><a href="" class="navmenu__subtitle">Каталог</a></li>
+              <li><a href="" class="navmenu__subtitle">Скидки</a></li>
+              <li><a href="" class="navmenu__subtitle">Популярное</a></li>
+              <li><a href="" class="navmenu__subtitle">Новинки</a></li>
+            </ul>
+          </div>
+          <div class="footer-navmenu__group">
+            <ul>
+              <li><h4>Маркетплейс</h4></li>
+              <li><a href="" class="navmenu__subtitle">О нас</a></li>
+              <li><a href="" class="navmenu__subtitle">Контакты</a></li>
+              <li><a href="" class="navmenu__subtitle">Новости и блог</a></li>
+              <li><a href="" class="navmenu__subtitle">Партнеры</a></li>
+            </ul>
+          </div>
+          <div class="footer-navmenu__group">
+            <ul>
+              <li><h4>Информация</h4></li>
+              <li><a href="" class="navmenu__subtitle">Условия использования</a></li>
+              <li><a href="" class="navmenu__subtitle">Политика конфиденциальности</a></li>
+              <li><a href="" class="navmenu__subtitle">Вакансии</a></li>
+              <li><a href="" class="navmenu__subtitle">Помощь</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Вторая часть футера -->
+        <div class="footer-newsletter__container">
+          <input type="email" class="newsletter-box" placeholder="Подпишитесь, чтобы следить за новинками и акциями!" />
+        </div>
+
+        <!-- Третья часть футера -->
+        <div class="footer-bottom__container">
+          <p>&#169; 2023 Lumistore. Все права защищены.</p>
+          <div class="payment-methods-images">
+            <img src="./images/footer/MirLogo.svg" alt="MIR" />
+            <img src="./images/footer/MastercardLogo.svg" alt="Mastercard" />
+            <img src="./images/footer/VisaLogo.svg" alt="VISA" />
+            <img src="./images/footer/SBPLogo.svg" alt="SBP" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

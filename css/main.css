@@ -1,0 +1,679 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf")
+}
+
+:root {
+    --electric-blue: #003DFF;
+    --button-blue-bg: #BBCBFF;
+    --button-gray-bg: #DDDDDD;
+    --main-gray-color: #A1A1A1;
+    --main-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Inter', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+/* Стили ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Верхнее меню */
+.nav-list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    width: 100%;
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.nav-item-wrapper img {
+    margin-right: 6px;
+}
+
+/* Картинка профиля */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 2px solid var(--electric-blue);
+}
+
+/* Навигационная цепочка*/
+.breadcrumb {
+    margin-top: 150px;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb li {
+    margin-right: 16px;
+}
+
+.breadcrumb li:hover {
+    color: var(--electric-blue);
+}
+
+.breadcrumb li:last-child {
+    color: #8F8F8F;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin-left: 16px;
+    content: ">";
+    color: #8F8F8F;
+}
+
+/* Заголовок страницы */
+.page-title {
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+
+/* Стили кнопок */
+button {
+    all: unset;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--electric-blue);
+    color: #fff;
+    padding: 16px;
+}
+
+.btn-burger {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.btn-burger img {
+    padding-right: 20px;
+}
+
+.btn-sign-in {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+/* Кнопки синие (активные) */
+.blue-button {
+    padding: 12px 24px;
+    color: var(--electric-blue);
+    background-color: var(--button-blue-bg);
+    border: 2px solid var(--electric-blue);
+}
+
+/* Кнопки серые (неактивные) */
+.gray-button {
+    padding: 12px 24px;
+    color: var(--main-gray-color);
+    background-color: var(--button-gray-bg);
+    border: 2px solid var(--main-gray-color);
+    transition: all 0.3s ease;
+}
+
+.gray-button:hover {
+    color: var(--electric-blue);
+    background-color: var(--button-blue-bg);
+    border: 2px solid var(--electric-blue);
+}
+
+/* Правые отступы для кнопок (кроме последней) */
+.blue-button:not(:last-child), .gray-button:not(:last-child) {
+    margin-right: 16px;
+}
+
+
+/* Контейнер */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    font-size: 16px;
+    /* padding: 0 20px; */
+}
+
+@media (max-width: 1170px) { /* попытки сделать адаптив*/
+    .container {
+        padding: 0 20px;
+    }
+ }
+
+/* надпись "Lumistore" */
+.wordmark-lumi {
+    color: var(--electric-blue);
+}
+
+.wordmark-store, .wordmark-lumi {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.wordmark-store {
+    margin-right: 16px;
+}
+
+
+/* Поле поиска */
+.search-box {
+    background: url(../images/Search.svg) no-repeat 16px center;
+    background-color: #EFEFEF;
+    padding-left: 56px;
+    padding-right: 24px;
+    height: 56px;
+    width: 370px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.search-box:focus {
+    outline: none;
+    box-shadow: var(--main-shadow);
+}
+
+.search-box:hover {
+    box-shadow: var(--main-shadow);
+}
+
+
+/* Секции */
+section {
+    margin-bottom: 100px;
+}
+
+/* Заголовки групп */
+.group-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.group-heading h2 {
+    font-size: 32px;
+}
+
+.show-all-link {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--electric-blue);    
+}
+
+.show-all-link:hover {
+    color:#1950FF;
+}
+
+/* Постер с поиском (первый) */
+.poster-1 {
+    margin-top: 120px;
+    max-width: 1170px;
+    height: 470px;
+    padding-top: 100px;
+    padding-left: 70px;
+    background-color: #d6effb;
+    border-radius: 20px;
+    background-image: url('../images/poster/Illustration-1.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.poster-title-1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.poster-subtitle-1 {
+    font-size: 24px;
+    font-weight: 500;
+    color:#8F8F8F;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.poster-1 .search-box {
+    background-color: #fff;
+}
+
+
+
+
+/* Секция "Популярные категории" */
+.popular-categories {
+    width: 100%;
+}
+
+.popular-item__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+/* //Попытки сделать адаптивный дизайн// */
+@media (max-width: 375px) { 
+    .group-heading {
+        text-align: center;
+    }
+ }
+
+@media (max-width: 550px) { 
+    .popular-item__container {
+        justify-content: space-around;
+    }
+ }
+
+ @media (max-width: 1020px) { 
+    .popular-item__container {
+        gap: 20px;
+    }
+ }
+
+
+
+
+.popular-item {
+    width: 170px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.popular-item:hover {
+    color: var(--electric-blue);    
+    transform: scale(1.05);
+}
+
+.hover-svg {
+    transition: all 0.3s ease;
+}
+
+.popular-item:hover .hover-svg {
+    stroke: var(--electric-blue);
+}
+
+.popular-item__name {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Секция "Популярные товары" */
+.popular-products {
+    width: 100%;
+}
+
+/* Карточка товара */
+.product-card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 810px) { 
+    .product-card__container {
+        justify-content: space-around;
+        gap: 20px
+    }
+ }
+ @media (max-width: 540px) { 
+    .group-heading {
+        flex-direction: column;
+    }
+ }
+
+
+.product-card {
+    width: 270px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+}
+
+.product-card__image {
+    width: 240px;
+    height: 160px;
+    object-fit: contain;
+    padding-top: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-card__name {
+    height: 60px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.product-card__bottom-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.product-card__price {
+    height: 48px;
+    width: 120px;
+    margin: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.product-card__old-price {
+    position: absolute;
+    margin-left: 16px;
+    margin-bottom: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #8F8F8F;
+    transition: all 0.2s ease;
+
+}
+
+/* Пробел и знак Рубля */
+.product-card__price span {
+    color: var(--main-gray-color);
+    transition: all 0.2s ease;
+}
+
+.product-card__buttons button {
+    height: 48px;
+    width: 48px;
+    border-radius: 10px;
+}
+
+.product-card__bottom-wrapper:hover .product-card__price {
+    color: var(--electric-blue);
+}
+
+.product-card__bottom-wrapper:hover .product-card__price span {
+    color: var(--electric-blue);
+}
+
+.product-card__bottom-wrapper:hover .product-card__old-price {
+    color: var(--electric-blue);
+}
+
+.product-card__name:hover {
+    color: var(--electric-blue);
+}
+
+.product-card__image:hover + .product-card__name {
+    color: var(--electric-blue);
+}
+
+.btn-to-favorite:hover .hover-svg1 {
+    stroke: #1950FF;
+}
+
+.btn-to-cart:hover .hover-svg2 {
+    fill: #1950FF;
+}
+/* Конец карточки товара  */
+
+
+/* Секция "Скидки" */
+.discounts {
+    width: 100%;
+}
+
+
+/* Постер о Trade-in (второй) */
+
+.poster-2 {
+    margin-top: 120px;
+    max-width: 1170px;
+    height: 470px;
+    padding-top: 100px;
+    padding-left: 500px;
+    background-color: #EFE8DD;
+    border-radius: 20px;
+    background-image: url('../images/poster/Illustration-2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.poster-title-2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.poster-subtitle-2 {
+    font-size: 24px;
+    font-weight: 500;
+    color:#8F8F8F;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* Ссылка стилизованная под кнопку  */
+.btn-poster-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--electric-blue);
+    height: 60px;
+    width: 270px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btn-poster-2:hover {
+    background-color: #1950FF;
+}
+
+
+/* Секция "Новинки" */
+.new-products {
+    width: 100%;
+}
+
+/* Секция "Новости и блог" */
+.news-and-blog {
+    width: 100%;
+}
+
+.news-and-blog__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 810px) {
+    .news-and-blog__container {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1080px) {
+    .news-and-blog__container {
+        gap: 20px;
+    }
+}
+.news-item {
+    width: 270px;
+    height: 330px;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+}
+
+
+.news-item__image {
+    width: 270px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.news-item__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 16px;
+    margin: 0 12px;
+}
+
+
+/* Футер */
+footer {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+/* Первая часть футера */
+.footer-navmenu__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 84px;
+}
+
+.footer-navmenu__group {
+    width: 270px;
+}
+
+footer .wordmark-lumi {
+    font-size: 24px;
+}
+
+footer .wordmark-store {
+    font-size: 24px;
+}
+
+.footer-navmenu__group h4 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.footer-navmenu__group li {
+    margin-bottom: 16px;
+}
+
+.navmenu__subtitle:hover {
+    color: var(--electric-blue);
+}
+
+/* Вторая часть футера */
+
+.footer-newsletter__container {
+    display: flex;
+    justify-content: end;
+    margin: 70px 0;
+}
+
+.newsletter-box {
+    background: url(../images/footer/Mail.svg) no-repeat 16px center;
+    background-color: #EFEFEF;
+    padding-left: 56px;
+    padding-right: 24px;
+    height: 56px;
+    width: 570px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+/* Третья часть футера */
+
+.footer-bottom__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+
+/* Пагинация */
+.pagination__container {
+    width: 100%;
+}
+
+.pagination__container ul{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    box-shadow: var(--main-shadow);
+    padding: 0 70px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pagination__container ul li a{
+    display: flex;
+    padding: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pagination__container ul li:hover {
+    color: var(--electric-blue);
+    background-color: var(--button-blue-bg);
+    border-bottom: 4px solid var(--electric-blue);
+    margin-bottom: -4px;
+}

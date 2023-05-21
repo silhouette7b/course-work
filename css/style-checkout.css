@@ -1,0 +1,158 @@
+:root {
+    --electric-blue: #003DFF;
+    --button-blue-bg: #BBCBFF;
+    --button-gray-bg: #DDDDDD;
+    --main-gray-color: #A1A1A1;
+    --main-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+.checkout__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-details {
+    width: 860px;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+    padding: 35px 70px;
+}
+
+.order-details .links {
+    margin-bottom: 52px;
+}
+
+/* Небольшое переопределение стилей из style-personal-account.css */
+.personal-data {
+    margin-bottom: 20px;
+}
+
+
+
+.order-summary, .promocode__container {
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+} 
+
+.order-summary {
+    width: 280px;
+    height: 420px;
+    margin-bottom: 32px;
+}
+
+
+
+.links a {
+    color: var(--electric-blue);
+}
+
+.obtaining-method {
+    margin-bottom: 40px;
+}
+
+.address__wrapper {
+    display: flex;
+}
+  
+.address__left-column {
+    margin-right: 16px;
+}
+  
+.address__right-column {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.address {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+  
+.address span {
+    color: var(--main-gray-color);
+}
+
+.address__right-column a {
+    color: var(--electric-blue);
+    text-decoration: underline;
+}
+
+.address__right-column a:hover {
+    color: #1950FF;
+}
+
+.address__right-column a:hover ~ .address__right-column span {
+    color: var(--electric-blue);
+}
+
+.order-details h2 {
+    margin-bottom: 28px;
+}
+
+.address__wrapper {
+    margin-bottom: 52px;
+}
+
+.payment-method {
+    margin-bottom: 16px;
+}
+
+
+
+
+
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    font-weight: bold;
+
+}
+
+.order-summary div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-pay {
+    color: #FFF;
+    background-color: var(--electric-blue);
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+}
+
+.btn-pay:hover {
+    background-color: #1950FF;
+}
+
+
+.promocode__container {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 48px;
+}
+
+.promocode__container p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.promocode {
+    padding: 16px;
+    border-radius: 10px;
+    border: 2px solid var(--main-gray-color);
+    background-color: #F3F3F3;
+}
+.promocode::placeholder {
+    font-weight: bold;
+}

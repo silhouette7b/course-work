@@ -1,0 +1,394 @@
+:root {
+    --electric-blue: #003DFF;
+    --button-blue-bg: #BBCBFF;
+    --button-gray-bg: #DDDDDD;
+    --main-gray-color: #A1A1A1;
+    --main-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+section {
+    border-radius: 20px;
+    box-shadow: var(--main-shadow);
+}
+
+.product-details {
+    padding: 32px 48px;;
+}
+
+.product-column__container {
+    display: flex;
+}
+
+.product-column1 {
+    margin-right: 48px;
+}
+
+.image-top img{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    margin-bottom: 32px;
+}
+
+.images-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-bottom img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+
+}
+
+.images-bottom img:hover {
+    border: 1px solid var(--main-gray-color);
+}
+
+.product-column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-column2 h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.product-column2 h3 {
+    color: #8F8F8F;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.rating-and-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rating img {
+    padding-right: 16px;
+}
+
+.icons-wrapper button:not(:last-child) {
+    margin-right: 16px;
+}
+
+.icons-wrapper .notification:hover img {
+    content: url(../images/lumi-n3-pro/Notification-blue.svg)
+}
+
+.icons-wrapper .share:hover img {
+    content: url(../images/lumi-n3-pro/Share-blue.svg);
+}
+
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--main-shadow);
+}
+
+.price-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.product-price {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.product-price span {
+    color: var(--main-gray-color);
+}
+
+.btn-actions {
+    display: flex;
+}
+
+.btn-favorite {
+    margin-right: 8px;
+}
+
+.btn-favorite:hover img {
+    content: url(../images/lumi-n3-pro/ButtonAddToFavorite-blue.svg);
+}
+
+.btn-buy {
+    background-color: var(--electric-blue);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.btn-buy:hover {
+    background-color: #1950FF;
+}
+
+.btn-buy img {
+    margin-right: 16px;
+}
+
+.blue-button, .gray-button {
+    padding: 8px 24px;
+}
+
+.product-specification {
+    margin-bottom: 24px;
+}
+
+.product-specification h4, .product-color h4{
+    margin-bottom: 16px;
+}
+
+.product-color {
+    margin-bottom: 32px;
+}
+
+.product-color button {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border: 2px solid var(--main-gray-color);
+    transition: all 0.3s ease;
+}
+.product-color button:hover {
+    border: 2px solid var(--electric-blue);
+}
+
+.color-yellow {
+    background-color: #FFEA32;
+}
+.color-gray {
+    background-color: #2A3450;
+}
+.color-blue {
+    background-color: #2C67FF;
+}
+.color-white {
+    background-color: #EDF0F5;
+}
+
+.product-availability {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-availability {
+    font-weight: 600;
+}
+
+.product-availability span {
+    color: var(--electric-blue);
+}
+
+.product-availability span:hover {
+    color:#1950FF;
+}
+
+/* Описание */
+.description {
+    padding: 32px 48px;
+}
+
+.description h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.description p {
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+
+/* Характеристики */
+.characteristics {
+    padding: 32px 48px;
+}
+
+.characteristics h2 {
+    margin-bottom: 32px;
+}
+
+.characteristics h3 {
+    margin-bottom: 24px;;
+}
+
+.characteristics-section {
+    padding-bottom: 40px;
+}
+
+.characteristic-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.btn-show-more {
+    color: var(--main-gray-color);
+    border: 2px solid var(--main-gray-color);
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    transition: all 0.05s ease;
+}
+
+.btn-show-more:hover {
+    color: var(--electric-blue);
+    border: 2px solid var(--electric-blue);
+}
+.btn-show-more:hover img {
+    content: url("../images/lumi-n3-pro/ArrowDown-blue.svg");
+}
+
+.btn-show-more span {
+    margin-right: 56px;
+}
+
+
+/* Отзыв */
+.review {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px;
+}
+
+.review-heading {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.review-heading a {
+    color: var(--electric-blue);
+}
+.review-heading a:hover {
+    color: #1950FF;
+}
+
+.user-and-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.user-img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border: 2px solid var(--electric-blue);
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.name-and-date {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-right: 56px;
+}
+
+.user-rating {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+}
+
+.rating-wrapper img {
+    margin-right: 16px;
+}
+
+.rating-wrapper {
+    display: flex;
+}
+
+
+.advantages-list {
+    padding-left: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.advantages-list li{
+    list-style: decimal;
+}
+
+.review-body h3 {
+    margin-bottom: 20px;
+}
+
+.disadvantages-list {
+    font-weight: 500;
+    margin-bottom: 24px;
+
+}
+
+.comment {
+    margin-bottom: 60px;
+}
+
+.comment p {
+    font-weight: 500;
+}
+
+.review-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leave-comment {
+    color: var(--electric-blue);
+    text-decoration: underline;
+}
+.leave-comment:hover {
+    color:#1950FF;
+    text-decoration: none;
+}
+
+.review-reputation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reputation-score {
+    color: var(--electric-blue);
+    background-color: #9FB6FF;
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.btn-like:hover img {
+    content: url("../images/lumi-n3-pro/Like-hover.svg");
+}
+
+.btn-dislike:hover img {
+    content: url("../images/lumi-n3-pro/Dislike-hover.svg");
+}

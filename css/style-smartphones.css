@@ -1,0 +1,142 @@
+:root {
+    --electric-blue: #003DFF;
+    --button-blue-bg: #BBCBFF;
+    --button-gray-bg: #DDDDDD;
+    --main-gray-color: #A1A1A1;
+    --main-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__container {
+    display: flex;
+}
+
+.catalog__container aside {
+    width: 270px;
+    height: 1155px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: var(--main-shadow);
+    padding: 16px 32px;
+}
+
+.catalog__right {
+    display: flex;
+    flex-direction: column;
+    width: 870px;
+}
+
+.catalog__right .search-box {
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: var(--main-shadow);
+}
+
+.search-box {
+    margin-bottom: 16px;
+}
+
+.sort-by__container {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: var(--main-shadow);
+    width: 870px;
+    margin-bottom: 32px;
+}
+
+
+.sort-by {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    color: var(--electric-blue);
+}
+.sort-by:hover {
+    color: #1950FF;
+}
+
+.sort-by button {
+    display: flex;
+    align-items: center;
+}
+
+.sort-by img {
+    margin-left: 16px;
+}
+
+
+.view-mode {
+    display: flex;
+    gap: 8px;
+}
+
+.catalog-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 56px;
+}
+
+
+
+/* Переопределение стилей для пагинации (костыль) */
+.catalog__right .pagination__container ul{
+    padding: 0;
+}
+
+
+
+.view-mode .img-mode1:hover {
+    content: url(../images/catalog/CatalogViewMode1-hover.svg);
+}
+
+
+aside h2 {
+    margin-bottom: 32px;
+}
+
+.filter-category {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+
+.filter-input {
+    width: 95px;
+    padding: 6px 12px;
+    border-radius: 5px; 
+    font-size: 20px;
+}
+
+.filter-input::placeholder {
+    font-size: 20px;
+}
+
+.filter-prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-prices-wrapper {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.filter-prices-wrapper input {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
